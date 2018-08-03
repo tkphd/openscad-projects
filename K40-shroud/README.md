@@ -5,6 +5,8 @@ passively cooled [nVidia Tesla K40][tsla] GPU, so the card can be used in a work
 without overheating. With room air at 24°C, the reference implementation reaches a
 steady-state temperature of 84°C: high, but stable.
 
+![shroud after printing and assembly][part]
+
 To use this part, you will need:
 
 - A Tesla K40, preferably provided by your employer through a friendly sysadmin.
@@ -36,5 +38,6 @@ fan power connector and both K40 power connectors, and do some science with it!
 <!--References-->
 [cura]: https://ultimaker.com/en/products/ultimaker-cura-software/list
 [gcod]: https://en.wikipedia.org/wiki/G-code
+[part]: ../media/K40-shroud.png
 [scad]: http://www.openscad.org
 [tsla]: https://www.nvidia.com/content/PDF/kepler/nvidia-tesla-k40.pdf
