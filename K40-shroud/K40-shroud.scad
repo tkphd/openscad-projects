@@ -20,6 +20,7 @@ truncation = 109.999;
 channel_depth = 15.4;
 channel_length = 88.5;
 channel_width = 17.5;
+screw_radius = 4.5;
  
 module channel () {
     union () {
@@ -129,9 +130,9 @@ module mount () {
             }
         }
         translate ([-11, 28.05 + offset, -0.005]) {
-            channel_holes (17.5, 3, 25.4, 4);
+            channel_holes (17.5, 3, 25.4, screw_radius);
             translate ([0, 0, -1.5 * plate_height - 0.095])
-                channel_holes (17.5, 3, 0.1 + 1.5 * plate_height, 1.8);
+                channel_holes (17.6, 3, 0.1 + 1.5 * plate_height, 1.8);
         }
         translate ([ 0, offset, 0])
             cylinder (r = duct_radius - 1, h = 2 * duct_height + 0.2);
